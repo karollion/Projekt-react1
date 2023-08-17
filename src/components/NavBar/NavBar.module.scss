@@ -1,0 +1,26 @@
+@import '../../styles/settings.scss';
+
+.nav {
+  width: 100%;
+  background: darken($color-dark, 3%);
+}
+
+.navbar{
+  width: 100%;
+  
+  display: flex;
+  justify-content: space-between;
+
+  a{
+    color: $color-light;
+    text-decoration: none;
+    font-size: ($base-size * 2);
+    margin: 33.2px $base-size;
+  }
+
+  li{
+    font-size: ($base-size * 1.5);
+    display: inline-block;
+    margin: 20px $base-size;
+  }
+}
