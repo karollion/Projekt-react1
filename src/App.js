@@ -4,15 +4,21 @@ import NavBar from './components/NavBar/NavBar';
 import Favorite from './components/Favorite/Favorite';
 import About from './components/About/About';
 import Home from './components/Home/Home';
+import { Routes, Route } from 'react-router-dom';
+import WrongPage from './components/WrongPage/WrongPage';
+
 
 const App = () => {
   return (
     <main>
       <NavBar />
       <Container>
-        <Favorite />
-        <About />
-        <Home />
+        <Routes>
+          <Route path="/" element={<Home />} />
+          <Route path="/about" element={<About />} />
+          <Route path="/favorite" element={<Favorite />} />
+          <Route path="*" element={<WrongPage/>} />
+        </Routes>
       </Container>
     </main>
   );
