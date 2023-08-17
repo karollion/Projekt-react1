@@ -22,5 +22,9 @@
     font-size: ($base-size * 1.5);
     display: inline-block;
     margin: 20px $base-size;
+    
+    .linkActive{
+      color: $color-warning;
+    }
   }
 }
