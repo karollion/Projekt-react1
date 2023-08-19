@@ -20,10 +20,10 @@ const List = () => {
         {columns.map(column =>
           <Column
             key={column.id}
-            {...column}  />
+            {...column} />
         )}
       </section>
-      <ColumnForm />
+      <ColumnForm listId={listId} />
     </div>
   );
 };
