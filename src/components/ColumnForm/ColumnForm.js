@@ -10,8 +10,6 @@ const ColumnForm = ({listId}) => {
     const [title, setTitle] = useState('');
     const [icon, setIcon] = useState('');
 
-console.log(listId)
-
     const handleSubmit = e => {
         e.preventDefault();
         dispatch(addColumn({ title, icon, listId }));
