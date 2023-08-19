@@ -20,3 +20,11 @@
 .favorite {
     color: $color-warning;
 }
+
+.trash {
+    color: darkgray;
+
+    &:hover {
+        color: $color-dark;
+    }
+}
